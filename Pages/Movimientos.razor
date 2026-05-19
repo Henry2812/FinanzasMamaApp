@@ -1,0 +1,55 @@
+﻿@page "/movimientos"
+
+<div class="page-container">
+
+    <div class="filters-card">
+        <div class="filter-group">
+            <label>Mes de Trabajo</label>
+            <input type="month" />
+        </div>
+
+        <div class="filter-group">
+            <label>Saldo Anterior</label>
+            <input type="number" placeholder="0" />
+        </div>
+    </div>
+
+    <div class="form-card">
+        <h3>➕ Nuevo Movimiento</h3>
+
+        <div class="form-grid">
+            <input type="date" />
+            <select>
+                <option>Ingreso (+)</option>
+                <option>Egreso (-)</option>
+            </select>
+            <input type="number" placeholder="0.00" />
+            <input type="text" placeholder="Detalle / Concepto" />
+            <input type="text" placeholder="Comentario" />
+        </div>
+
+        <button class="main-btn">Registrar Movimiento</button>
+    </div>
+
+    <div class="history-card">
+        <div class="history-top">
+            <h3>Historial</h3>
+
+            <div class="history-filters">
+                <input type="month" />
+                <input type="date" />
+                <input type="date" />
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Concepto</th>
+                    <th>Monto</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>

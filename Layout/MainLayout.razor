@@ -1,5 +1,11 @@
-﻿@inherits LayoutComponentBase
+﻿@using FinanzasMamaApp.Shared
 
-<div class="container-fluid p-0">
-    @Body
+@inherits LayoutComponentBase
+
+<div class="main-layout">
+    <NavMenu />
+
+    <main>
+        @Body
+    </main>
 </div>

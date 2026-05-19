@@ -1,0 +1,73 @@
+body {
+    background: #f3f4f6;
+}
+
+.page-container {
+    max-width: 1150px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.filters-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.06);
+    margin-bottom: 25px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+    .filter-group label {
+        font-weight: 600;
+        color: #374151;
+    }
+
+    .filter-group input {
+        border: 1px solid #d1d5db;
+        padding: 12px 16px;
+        border-radius: 12px;
+        min-width: 220px;
+    }
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.summary-card {
+    color: white;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+
+    .summary-card span {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .summary-card h2 {
+        margin-top: 10px;
+        font-size: 38px;
+        font-weight: 800;
+    }
+
+.green {
+    background: #10b981;
+}
+
+.red {
+    background: #f43f5e;
+}
+
+.blue {
+    background: #4f46e5;
+}
