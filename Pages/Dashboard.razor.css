@@ -71,3 +71,15 @@ body {
 .blue {
     background: #4f46e5;
 }
+
+
+@media (max-width: 768px) {
+
+    .summary-card {
+        padding: 22px;
+    }
+
+        .summary-card h2 {
+            font-size: 28px;
+        }
+}

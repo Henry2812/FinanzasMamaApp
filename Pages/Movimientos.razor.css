@@ -42,3 +42,34 @@
     display: flex;
     gap: 12px;
 }
+
+
+
+@media (max-width: 768px) {
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .history-top {
+        flex-direction: column;
+        align-items: start;
+        gap: 14px;
+    }
+
+    .history-filters {
+        flex-direction: column;
+        width: 100%;
+    }
+
+        .history-filters input {
+            width: 100%;
+        }
+
+    table {
+        font-size: 13px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

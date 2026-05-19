@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "FinanzasMamaApp",
   "resources": {
-    "hash": "sha256-7aA0Xub3OCqGBRpPpLP4fBgrod+sFuZiQVUWrWq40YI=",
+    "hash": "sha256-wBTlLdFxxWnGaDLneuVUxilAB24A9nzg2QUipUnAqao=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Components.xc85pgo4s7.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.j3qko22j2r.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -34,7 +34,7 @@
       "System.Text.Json.0jtr0sfoda.wasm": "System.Text.Json.wasm",
       "System.Text.RegularExpressions.k8ibga7wut.wasm": "System.Text.RegularExpressions.wasm",
       "System.Private.CoreLib.nuow4nofg4.wasm": "System.Private.CoreLib.wasm",
-      "FinanzasMamaApp.gyjx44trzl.wasm": "FinanzasMamaApp.wasm",
+      "FinanzasMamaApp.feyn5fl6wm.wasm": "FinanzasMamaApp.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.noby4tlk4d.js": "dotnet.native.js",
       "dotnet.native.qe75a9vfqn.wasm": "dotnet.native.wasm",
@@ -91,7 +91,7 @@
       "System.Text.Encodings.Web.dvi1t3okep.wasm": "sha256-N0H/XiI7CqSVWRBwOAksJI9mQ1UaYSw6kuREMzV/aw8=",
       "System.Text.Json.0jtr0sfoda.wasm": "sha256-xFFFrcKvgZr/OD8aiMiD25hF5Oi+PyNR0+WyUDaBQhk=",
       "System.Text.RegularExpressions.k8ibga7wut.wasm": "sha256-7OYvLuFLvwbax++2u+uoDmoaX8o/Q8wcYJC92eP1YjA=",
-      "FinanzasMamaApp.gyjx44trzl.wasm": "sha256-SIflllfQAqcNlESWgsl37xg3tuMLt2aD5owqyhXYSYM="
+      "FinanzasMamaApp.feyn5fl6wm.wasm": "sha256-GWEFDL+RgCyD69PQrxPqkRRFk4q2UceeYxzLXJwpKsI="
     }
   },
   "cacheBootResources": true,

@@ -43,3 +43,21 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+
+
+@media (max-width: 768px) {
+
+	.report-card {
+		min-height: auto;
+		padding: 20px;
+	}
+
+	.resume {
+		font-size: 14px;
+	}
+
+	.year-summary h2 {
+		font-size: 28px;
+	}
+}

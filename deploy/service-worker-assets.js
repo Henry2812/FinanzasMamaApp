@@ -1,13 +1,13 @@
 self.assetsManifest = {
-  "version": "1WXOXcud",
+  "version": "iepsRooz",
   "assets": [
     {
-      "hash": "sha256-TMyZA5Jj80isal7MN/kfRIWXqKH9cWLTHZbHtsSywPY=",
+      "hash": "sha256-zeS/Ri7yu5vRbVmvfPSAq/o95RTxPyBqSlBwm9jUQFA=",
       "url": "FinanzasMamaApp.styles.css"
     },
     {
-      "hash": "sha256-SIflllfQAqcNlESWgsl37xg3tuMLt2aD5owqyhXYSYM=",
-      "url": "_framework/FinanzasMamaApp.gyjx44trzl.wasm"
+      "hash": "sha256-GWEFDL+RgCyD69PQrxPqkRRFk4q2UceeYxzLXJwpKsI=",
+      "url": "_framework/FinanzasMamaApp.feyn5fl6wm.wasm"
     },
     {
       "hash": "sha256-HwE2HqtgGbU/jeFtiw246uBXxODzNBNhZJW1y/4MeAE=",
@@ -134,7 +134,7 @@ self.assetsManifest = {
       "url": "_framework/System.Text.RegularExpressions.k8ibga7wut.wasm"
     },
     {
-      "hash": "sha256-4MgCypLuOO6ySXrqX7mqsrKQ2EPLLgFMNTm0Wi+VLRo=",
+      "hash": "sha256-8+MDzw2VKtdMtcU7d8lwNECS7Ea8cXcoCts+P6t9Jsk=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -170,7 +170,7 @@ self.assetsManifest = {
       "url": "_framework/icudt_no_CJK.lfu7j35m59.dat"
     },
     {
-      "hash": "sha256-2PYwDu2FuSp51r59exOAPxvXMcJwKZRV24au8CSpZAc=",
+      "hash": "sha256-SUVcjsO3cl6jKWAkLuUjb+BEsJUP8+NNTQOIVp9POXI=",
       "url": "css/app.css"
     },
     {
