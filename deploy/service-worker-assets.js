@@ -1,13 +1,13 @@
 self.assetsManifest = {
-  "version": "b27tcahX",
+  "version": "I9MITvxv",
   "assets": [
     {
       "hash": "sha256-6CBin/9Tar+jryM/AG60q/Hgus1zzuDDnFhs9kyA59Q=",
       "url": "FinanzasMamaApp.styles.css"
     },
     {
-      "hash": "sha256-4Yy8dSimS4PC8AcNURa/dbsM8yoA1JNaECkUh6HrJps=",
-      "url": "_framework/FinanzasMamaApp.37ay71slki.wasm"
+      "hash": "sha256-ccoC/rcNe8PfTQf/FT/TvH526D97WP9w4pKjwAmp/rQ=",
+      "url": "_framework/FinanzasMamaApp.7udaln6qu7.wasm"
     },
     {
       "hash": "sha256-HwE2HqtgGbU/jeFtiw246uBXxODzNBNhZJW1y/4MeAE=",
@@ -142,7 +142,7 @@ self.assetsManifest = {
       "url": "_framework/System.Text.RegularExpressions.k8ibga7wut.wasm"
     },
     {
-      "hash": "sha256-WKKVATT+g1e5E469VroWpFMSSbgQKfLTEaHJYHaFSbw=",
+      "hash": "sha256-lc6IJsn+rw3E0bTLtrqF5b92EArezdd+ZVk9wArxVOQ=",
       "url": "_framework/blazor.boot.json"
     },
     {
