@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "K2zhcmDq",
+  "version": "q91gZtRb",
   "assets": [
     {
       "hash": "sha256-NF9lBwTdYMQopELHdW4Isb3pkkefEaQLMKkTmjlyZiE=",
@@ -542,8 +542,8 @@ self.assetsManifest = {
       "url": "_content/PSC.Blazor.Components.Chartjs/lib/hammer.js/hammer.min.map"
     },
     {
-      "hash": "sha256-4/kcpAh1HBGdafHcM79dEn5OHjqDUyklb9boY8Xo370=",
-      "url": "_framework/FinanzasMamaApp.hzisf2krbc.wasm"
+      "hash": "sha256-+rQ/exyU56FXXq3ZMomrfKOjHHnQgMScXaWQA8FDVRk=",
+      "url": "_framework/FinanzasMamaApp.qgyefwy43t.wasm"
     },
     {
       "hash": "sha256-HwE2HqtgGbU/jeFtiw246uBXxODzNBNhZJW1y/4MeAE=",
@@ -898,7 +898,7 @@ self.assetsManifest = {
       "url": "_framework/Websocket.Client.sntjl98ana.wasm"
     },
     {
-      "hash": "sha256-whhpWGukhlCG/HL4BCAzJB134QZWb4/tKb7kyDGHNbw=",
+      "hash": "sha256-oBOW1tHG24u2F5aKl6BjUdBtp7LQJ8Y38PjpBpZwVIk=",
       "url": "_framework/blazor.boot.json"
     },
     {
