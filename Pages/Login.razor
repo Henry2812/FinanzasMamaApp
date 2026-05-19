@@ -1,0 +1,41 @@
+@page "/login"
+@inject Supabase.Client SupabaseClient
+@inject NavigationManager Nav
+
+<div class="login-container">
+    <div class="login-card">
+        <h2>Iniciar Sesión</h2>
+
+        <input @bind="email" placeholder="Correo" class="form-control mb-3" />
+        <input @bind="password" type="password" placeholder="Contraseña" class="form-control mb-3" />
+
+        <button class="btn btn-primary w-100" @onclick="IniciarSesion">
+            Entrar
+        </button>
+
+        <p class="mt-3 text-danger">@mensaje</p>
+    </div>
+</div>
+
+@code {
+    string email = "";
+    string password = "";
+    string mensaje = "";
+
+    async Task IniciarSesion()
+    {
+        try
+        {
+            var response = await SupabaseClient.Auth.SignIn(email, password);
+
+            if (response?.User != null)
+            {
+                Nav.NavigateTo("/dashboard");
+            }
+        }
+        catch
+        {
+            mensaje = "Correo o contraseña incorrectos";
+        }
+    }
+}

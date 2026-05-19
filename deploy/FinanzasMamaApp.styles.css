@@ -88,6 +88,23 @@ body[b-4puwi2k7v6] {
             font-size: 28px;
         }
 }
+/* /Pages/Login.razor.rz.scp.css */
+.login-container[b-9d9chu89y9] {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8fafc;
+}
+
+.login-card[b-9d9chu89y9] {
+    background: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
 /* /Pages/Movimientos.razor.rz.scp.css */
 .form-card[b-z9wcyc47su],
 .history-card[b-z9wcyc47su] {
