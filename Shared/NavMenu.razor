@@ -1,4 +1,7 @@
-﻿<nav class="top-nav">
+﻿@inject NavigationManager Nav
+@inject Supabase.Client SupabaseClient
+
+<nav class="top-nav">
     <div class="nav-container">
         <div class="logo">💳 FinanzasPro</div>
 
@@ -7,5 +10,17 @@
             <NavLink href="/movimientos">Movimientos</NavLink>
             <NavLink href="/reportes">Informes</NavLink>
         </div>
+
+        <button class="logout-btn" @onclick="CerrarSesion">
+            Salir
+        </button>
     </div>
 </nav>
+
+@code{
+    async Task CerrarSesion()
+    {
+        await SupabaseClient.Auth.SignOut();
+        Nav.NavigateTo("/login", true);
+    }
+}

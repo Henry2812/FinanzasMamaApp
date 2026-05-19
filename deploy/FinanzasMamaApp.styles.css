@@ -1,3 +1,5 @@
+@import '_content/PSC.Blazor.Components.Chartjs/PSC.Blazor.Components.Chartjs.bundle.scp.css';
+
 /* /Layout/MainLayout.razor.rz.scp.css */
 body[b-8y3diyeysj]
 {
@@ -181,6 +183,81 @@ body[b-4puwi2k7v6] {
         white-space: nowrap;
     }
 }
+
+.history-card[b-z9wcyc47su] {
+    background: white;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.history-header[b-z9wcyc47su] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .history-header h3[b-z9wcyc47su] {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 700;
+        color: #1e293b;
+    }
+
+    .history-header span[b-z9wcyc47su] {
+        background: #eef2ff;
+        color: #4338ca;
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+.table-container[b-z9wcyc47su] {
+    overflow-x: auto;
+}
+
+table[b-z9wcyc47su] {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead[b-z9wcyc47su] {
+    background: #f8fafc;
+}
+
+th[b-z9wcyc47su] {
+    padding: 16px;
+    text-align: left;
+    color: #64748b;
+    font-size: 14px;
+}
+
+td[b-z9wcyc47su] {
+    padding: 18px 16px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 15px;
+}
+
+tbody tr:hover[b-z9wcyc47su] {
+    background: #f8fafc;
+}
+
+.income[b-z9wcyc47su] {
+    color: #16a34a;
+    font-weight: 700;
+}
+
+.expense[b-z9wcyc47su] {
+    color: #dc2626;
+    font-weight: 700;
+}
+.balance-column[b-z9wcyc47su] {
+    font-weight: 700;
+    color: #1e40af;
+}
 /* /Pages/Reportes.razor.rz.scp.css */
 .reports-grid[b-0n14px7ujp] {
 	display: grid;
@@ -243,6 +320,52 @@ body[b-4puwi2k7v6] {
 
 	.year-summary h2[b-0n14px7ujp] {
 		font-size: 28px;
+	}
+}
+
+.chart-wrapper[b-0n14px7ujp] {
+	width: 100%;
+	max-width: 380px;
+	margin: 20px auto;
+}
+
+	.chart-wrapper canvas[b-0n14px7ujp] {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+@media (max-width: 768px) {
+	.chart-wrapper[b-0n14px7ujp] {
+		max-width: 250px;
+	}
+
+	.reports-grid[b-0n14px7ujp] {
+		grid-template-columns: 1fr;
+	}
+
+	.report-card[b-0n14px7ujp],
+	.big-card[b-0n14px7ujp] {
+		width: 100%;
+		overflow: hidden;
+	}
+}
+
+.chart-wrapper[b-0n14px7ujp] {
+	width: 100%;
+	max-width: 320px;
+	margin: auto;
+	padding: 20px;
+}
+
+	.chart-wrapper canvas[b-0n14px7ujp] {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+@media (max-width: 768px) {
+	.chart-wrapper[b-0n14px7ujp] {
+		max-width: 240px;
+		padding: 10px;
 	}
 }
 /* /Shared/NavMenu.razor.rz.scp.css */

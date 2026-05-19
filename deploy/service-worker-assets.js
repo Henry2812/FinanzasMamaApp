@@ -1,13 +1,549 @@
 self.assetsManifest = {
-  "version": "Xltr/T9D",
+  "version": "K2zhcmDq",
   "assets": [
     {
-      "hash": "sha256-cE3JWs/a9PtOt9yteHLu8Fe3k0g5Ezh8rhJzBfAhdDg=",
+      "hash": "sha256-NF9lBwTdYMQopELHdW4Isb3pkkefEaQLMKkTmjlyZiE=",
       "url": "FinanzasMamaApp.styles.css"
     },
     {
-      "hash": "sha256-WAdnwjuAkYDmC8UXNZgLt8TTugq6KjYWmH1247Sd7o4=",
-      "url": "_framework/FinanzasMamaApp.8khfqqnyg8.wasm"
+      "hash": "sha256-PyEPTIFWvLzrPxvBxkpYqMkxIdtHmCnc/qF+zwdVmr8=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/Chart.js"
+    },
+    {
+      "hash": "sha256-5RIdUNV8tb0IIUJqvYqShSS+tzWKVzTtXkky8HTyG3E=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/PSC.Blazor.Components.Chartjs.bundle.scp.css"
+    },
+    {
+      "hash": "sha256-ZJLbI4Frx1SQVFRFzSxdkEBZpNT22wJw5Bt0sBKwj4Q=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/chart.cjs"
+    },
+    {
+      "hash": "sha256-Y3v2Hc67M+meYlH6QqJhRw1+/m+Og1VKdE4PqsSeUA4=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/chart.cjs.map"
+    },
+    {
+      "hash": "sha256-/ZF/tmiXf9EkM6MKt+cwtSamSzDE9fgGhqyX+hNZI+8=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/chart.esm.js"
+    },
+    {
+      "hash": "sha256-jztBzGnyV+37yY2PzLduP2Alm6ikR/FH/pnyA3inF6s=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/chart.esm.min.js"
+    },
+    {
+      "hash": "sha256-OtJalIqkbNqfzhs9j53+lSD/iazR2WN1sQL5iaJIjw0=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/chart.js"
+    },
+    {
+      "hash": "sha256-EBwWdKaxweuuthU/+EmzVJC5HNUkua3+/gu8mPTgTbA=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/chart.js.map"
+    },
+    {
+      "hash": "sha256-+8RZJua0aEWg+QVVKg4LEzEEm/8RFez5Tb4JBNiV5xA=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/chart.min.js"
+    },
+    {
+      "hash": "sha256-nUArsarZlam1fH2HQOeV2Lp01tzK/hRC3GNssPftN/E=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/chart.mjs"
+    },
+    {
+      "hash": "sha256-x+LL+wNI+ZAd7MSX8xbB/qhCAgm2EEEv+4j9PVFvnTA=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/chart.umd.js"
+    },
+    {
+      "hash": "sha256-KhsI9VBs8z/+/52MVrFJb7kL3MAJJ2mkUUu+auhX2P8=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/chart.umd.js.map"
+    },
+    {
+      "hash": "sha256-9+Z+ESFauvDh+cOfW1cYCONoY2aD4ViLHKzE5S+0vT4=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/chunks/helpers.segment.cjs"
+    },
+    {
+      "hash": "sha256-T6HYxW5bbF/y7v4N2wdUatSaK9ARAarOu+mR0M2iKmo=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/chunks/helpers.segment.cjs.map"
+    },
+    {
+      "hash": "sha256-hutUeslHqfk+KYq9r0jJSfUpCWY2ezSiE3yihbh+5Jk=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/chunks/helpers.segment.js"
+    },
+    {
+      "hash": "sha256-MhFQCHpcPxSpwH/oLp1YzegtKghv1FK2+cmNHTvoI1c=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/chunks/helpers.segment.js.map"
+    },
+    {
+      "hash": "sha256-nBQ1tdIrtWqgd9m9dHKc10jspeJF2snR2YqYJIpTu9k=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/controllers/controller.bar.d.ts"
+    },
+    {
+      "hash": "sha256-JL9MOrMSsy5vEUrcL0zoWKiiivdqvL3EakpAZVkz8VI=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/controllers/controller.bubble.d.ts"
+    },
+    {
+      "hash": "sha256-OzVdW8ILcWB5mAoO0tQAGAoVNo2wWIizuFj5CuPOrBQ=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/controllers/controller.doughnut.d.ts"
+    },
+    {
+      "hash": "sha256-/yxKQLveCDkIN0Q1VbmuIBr1S1J7rxUVVTEHgr17uO8=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/controllers/controller.line.d.ts"
+    },
+    {
+      "hash": "sha256-HmR/gCWdYZdMjQqJ2eP9IkFpdcJX129PMtb/OLkVfyE=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/controllers/controller.pie.d.ts"
+    },
+    {
+      "hash": "sha256-DpmYaEygLAKBcEQfTABuHK9CX5qcOBTPh2WgACdz/jA=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/controllers/controller.polarArea.d.ts"
+    },
+    {
+      "hash": "sha256-Men5uBF5zc5O4c0dakJ9wMX9FQZDB9+MrVgjew2WOFs=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/controllers/controller.radar.d.ts"
+    },
+    {
+      "hash": "sha256-e6c+ZHYUSsRYexi8xwNJ0qjnzt5OeAgVtToFfKcfdk0=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/controllers/controller.scatter.d.ts"
+    },
+    {
+      "hash": "sha256-+6aQ/ES1wdsp+0coMN9M6hN0ZCk1oCxjAnML/zd1JJg=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/controllers/index.d.ts"
+    },
+    {
+      "hash": "sha256-HKiMN4XUnv/ZFfVl8yl+MqM+qWnTQH4fuzM7hFYsdZU=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.adapters.d.ts"
+    },
+    {
+      "hash": "sha256-JRXa8OKwXsWpA0nqg5zB+tjmcTVmV0fNX3K3s9KtScM=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.animation.d.ts"
+    },
+    {
+      "hash": "sha256-e0p1a7WSSK64MXCSOQFKmFCDdyfC1uwFP1Turuld2jk=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.animations.d.ts"
+    },
+    {
+      "hash": "sha256-E08rooHaotNCtHM7M+2Lf95e2aMGoQtySHZFamy/vCQ=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.animations.defaults.d.ts"
+    },
+    {
+      "hash": "sha256-zekcoj0UAhrKU626WXe+v39y5PGLvc0samiUgsd9ugc=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.animator.d.ts"
+    },
+    {
+      "hash": "sha256-Y/YxKkvh7DRLqnxc24MVh+1fc3813yuqLT2x0YC5g+w=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.config.d.ts"
+    },
+    {
+      "hash": "sha256-Vf/m3nkPAZkTVCXYVl0p53Gb8OJFguyWdliAuemwItc=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.controller.d.ts"
+    },
+    {
+      "hash": "sha256-ZG1mxCPabwNuz9qB2m99YKR0jdsMWMhdJhu1yOVBzvI=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.datasetController.d.ts"
+    },
+    {
+      "hash": "sha256-69CfQHHFOkKgmiD+sLFEsfSF8Qp9YZCrqRwXFJd9aJ8=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.defaults.d.ts"
+    },
+    {
+      "hash": "sha256-Kp+Cr2x88eAC0XFT4Q11j2hdCFhk9sX30rd1681rL8k=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.element.d.ts"
+    },
+    {
+      "hash": "sha256-GRh4BBvm2uC3WXTR0o1VroKiiW1etQBOsDnpZOgUDAA=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.interaction.d.ts"
+    },
+    {
+      "hash": "sha256-f0Jy/VZ9BlwfVhSuO+1hs97keEUme+DkHdJPkBmFvw8=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.layouts.d.ts"
+    },
+    {
+      "hash": "sha256-NcsBuhIKgm3a2cL7DaUygGFtMrUY19dMWCUX/tNrgt8=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.layouts.defaults.d.ts"
+    },
+    {
+      "hash": "sha256-sCYEs+sCWvWLTAfH/85tKKA5SChstcTVzcRv/iFUlSQ=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.plugins.d.ts"
+    },
+    {
+      "hash": "sha256-NXrPtoIvFRYSFOueGEjHZxgnULZ/nCxqwPq1LOMA3bs=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.registry.d.ts"
+    },
+    {
+      "hash": "sha256-/UIz3t6rY/AUeUtF/7MKdYUTGpqQ4j9eGkq0rm9gIgs=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.scale.autoskip.d.ts"
+    },
+    {
+      "hash": "sha256-Kh975mjjqVzbaDxvdVYxvxnelwXG1sHJ5OvGfp25Ftc=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.scale.d.ts"
+    },
+    {
+      "hash": "sha256-9cj/EcDyjFcAIrTm0IMI8cgUZv6nXuKCDvx7fwSteb4=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.scale.defaults.d.ts"
+    },
+    {
+      "hash": "sha256-D+bLDsgv6ou2lNgzX41HDIhDYAonfPAtfb+4QAJmboo=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.ticks.d.ts"
+    },
+    {
+      "hash": "sha256-NFvxNLfACVTB2z4BHwKcBmh3oyJWVpydkbbOtbzKBUw=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/core.typedRegistry.d.ts"
+    },
+    {
+      "hash": "sha256-5DFZCJWHdozJ5LMlSIxUbOyVBgIXOwSk9suaYVxPw7k=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/core/index.d.ts"
+    },
+    {
+      "hash": "sha256-S/fEZ9NlUVfdCVner+6qkWf5A4LOwYRbhVfdNKnlsO0=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/elements/element.arc.d.ts"
+    },
+    {
+      "hash": "sha256-ecXDRBpnhs5IBFKKpWCDbkXPhVr08l1spA9ZjNbxl5o=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/elements/element.bar.d.ts"
+    },
+    {
+      "hash": "sha256-BT7QJ9arZWxT7o38P+hCvv8qgxgxWR9/RGwOoWMvYG4=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/elements/element.line.d.ts"
+    },
+    {
+      "hash": "sha256-9ltvEuJktuItz4iLwMI5qrJ8HR+mVgr2S81FD4ZKurc=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/elements/element.point.d.ts"
+    },
+    {
+      "hash": "sha256-vyNaQKWV/kwccv9ytQqYgacnnEBjAp/IjkkjdUJ5eTU=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/elements/index.d.ts"
+    },
+    {
+      "hash": "sha256-ZtESEAmYlol/99xSTUYYDuR5VUHfJ63/NwLFlOlQ8co=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers.cjs"
+    },
+    {
+      "hash": "sha256-cOiLuKYCqyS5WL/+VmwDypRIINrlU8FHjlL0yTjnruk=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers.cjs.map"
+    },
+    {
+      "hash": "sha256-IVT9AUj0mocMDrHZxKjwyANtqX4U4AnRxO+aDgH+B7U=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers.esm.js"
+    },
+    {
+      "hash": "sha256-xZAGNyGuppMSxU/GRgD79OweHiZxd4L92awpQUHSJEI=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers.esm.min.js"
+    },
+    {
+      "hash": "sha256-uw3aYQJp4r9wj60Y4gLEvGc7dfO1ZjWOF/CTYUBsl5I=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers.js"
+    },
+    {
+      "hash": "sha256-u56o2opK5NvUmuOLtkteElsA8M372RWkeednGWYU1rk=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers.js.map"
+    },
+    {
+      "hash": "sha256-tYMX6CN/AJDvB8+vLR1xJoCDJzi95UMfm0MpAqtCeWM=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers.mjs"
+    },
+    {
+      "hash": "sha256-3631UyR2WPqePnkodUcinlwdRTM35qeAjMFBh8oVBB0=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.canvas.d.ts"
+    },
+    {
+      "hash": "sha256-6xnZOTbhTX9ZfoaFD/9mfIENbTOKiUu1/3GmWq50ANY=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.collection.d.ts"
+    },
+    {
+      "hash": "sha256-mgwtRQbhAxoH+d5d3oX4A4N90MdHEL7mzUzUtlWqEcs=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.color.d.ts"
+    },
+    {
+      "hash": "sha256-9pqougbj/kNp8+cSbZnEoCPbzRtMLasRiSgzLtV6m4M=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.config.d.ts"
+    },
+    {
+      "hash": "sha256-JAU90JqLwxWg4wTrjveezzKZ+l8pepCA2jHVpJyWgug=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.config.types.d.ts"
+    },
+    {
+      "hash": "sha256-l9PEvSpJpW8stju3bFiAr+XHYJjcu1WYzRTpa/Vyy4Y=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.core.d.ts"
+    },
+    {
+      "hash": "sha256-qJVYn9i6eRx7cp+Sry4UVrmFoOY+eVU8R1li97AlRBk=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.curve.d.ts"
+    },
+    {
+      "hash": "sha256-lORp1cUVFo4uMjLI+OjCVIg+iww/Q9Iw1qCvLJXOrKg=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.dom.d.ts"
+    },
+    {
+      "hash": "sha256-7LrCbAx2Xh2j50ijXt7fpMfth/SDmZGc2VKui8MqEzk=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.easing.d.ts"
+    },
+    {
+      "hash": "sha256-hk/abkFq4zTw+xv3931Iz/le16vC0vMkCSuKLcihwUo=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.extras.d.ts"
+    },
+    {
+      "hash": "sha256-2z86rPQX8LU6b8NWsEyFXC8F7KaU57JrugxQb/EECjY=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.interpolation.d.ts"
+    },
+    {
+      "hash": "sha256-8NK/Q2mzKDqTvePP9OLMIsXhgOdYfX8FVx88dyggWus=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.intl.d.ts"
+    },
+    {
+      "hash": "sha256-lvo+IiS2GwGc7j/8syOVPnXoi+zf4lnmhwAKs1BwqEI=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.math.d.ts"
+    },
+    {
+      "hash": "sha256-qdzRiw9pfUst77rOUhXNqGaSEp0/saAeA61og5Ookzk=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.options.d.ts"
+    },
+    {
+      "hash": "sha256-IU/kW1E9s5J0794EDN11XJvrHkOWcNlMbzPJCX/Y8Mk=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.rtl.d.ts"
+    },
+    {
+      "hash": "sha256-8+vwpx+54NcIxgfWRI7a56eJMWJTK1YLPzYfSLrNv8o=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/helpers.segment.d.ts"
+    },
+    {
+      "hash": "sha256-CgUskA4IG+PNT5gurSONS83IdSgKKIg98MwNCJoUZlE=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/helpers/index.d.ts"
+    },
+    {
+      "hash": "sha256-h/QTQKDKxbVOSZs+pubQyy56u5q/X+rtxsTMYIzf3FQ=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/index.d.ts"
+    },
+    {
+      "hash": "sha256-lj2zpWaCgjV7bmvjW/ckr+Dgysx2vnz3itbJKMeMJIE=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/index.umd.d.ts"
+    },
+    {
+      "hash": "sha256-AIW8OXE4GXFdSbJ7tkdn3/GCkXmwkU7w1OGoUncPATY=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/platform/index.d.ts"
+    },
+    {
+      "hash": "sha256-JWJ2IGkllKSbAacZJBblmg/ZRxfE9cKACjzd5Y4os58=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/platform/platform.base.d.ts"
+    },
+    {
+      "hash": "sha256-APm5XAdBCU72n4vvomgHf7Xa5RkhSdma9cer9M0g1eU=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/platform/platform.basic.d.ts"
+    },
+    {
+      "hash": "sha256-iVNv/uL/XUnNTImKhUqSo9CBI5T0q24dSPn7ZY9Kvkg=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/platform/platform.dom.d.ts"
+    },
+    {
+      "hash": "sha256-UwBSfjLebqsobltww8ykdTgDIKFCrVTyNKNNqt/Huxw=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/plugins/index.d.ts"
+    },
+    {
+      "hash": "sha256-MIRM4HO7RraQj1UnMGORVinNeVv32DY4vLceFQeklLs=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/plugins/plugin.colors.d.ts"
+    },
+    {
+      "hash": "sha256-nGxFEhXq5q5O4Ov4Qz+dkElN99uodxhHjAUL9VUdoY8=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/plugins/plugin.decimation.d.ts"
+    },
+    {
+      "hash": "sha256-EufipVe9hjKN+J+WFyJvyCZHUvwCDdeK7hi/qRFZJjU=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/plugins/plugin.filler/filler.drawing.d.ts"
+    },
+    {
+      "hash": "sha256-WBSr4I9mOMoaorHvEUO7HXqs5v07cnIUQAIogKsQVpg=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/plugins/plugin.filler/filler.helper.d.ts"
+    },
+    {
+      "hash": "sha256-BQEmnsHqXaFMXYh/uzzPja1ZZtedRJgSyPstRO6v1qc=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/plugins/plugin.filler/filler.options.d.ts"
+    },
+    {
+      "hash": "sha256-1PNfGiq7HqCFHti9gWacuqjseuGAqvh2dPDEWvlg04o=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/plugins/plugin.filler/filler.segment.d.ts"
+    },
+    {
+      "hash": "sha256-PMR9UK/ewHCqQOA0TqeytuG+vEmaGZuQZwCLIE1SYEU=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/plugins/plugin.filler/filler.target.d.ts"
+    },
+    {
+      "hash": "sha256-M9+JV4eU+TqpwV43Mcsq4guzbN2gJxdCWcEIaXYonqg=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/plugins/plugin.filler/filler.target.stack.d.ts"
+    },
+    {
+      "hash": "sha256-oS0ajxtuNFl7mu8nV/30UFNiGJx1t/FSZmBKgLz/tC4=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/plugins/plugin.filler/index.d.ts"
+    },
+    {
+      "hash": "sha256-P+7TaOOo8CM7P/H1c+s0diwyNMCSsWIJ3dODEsBtVN0=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/plugins/plugin.filler/simpleArc.d.ts"
+    },
+    {
+      "hash": "sha256-GT93/ZmleYEnkVUWNjlY0iffnLguI/WJCqZoQJweY2A=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/plugins/plugin.legend.d.ts"
+    },
+    {
+      "hash": "sha256-2NwMV2x5xQafToewoVCI6VIEPLPfDsSH+B5rmLF05QM=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/plugins/plugin.subtitle.d.ts"
+    },
+    {
+      "hash": "sha256-hLaejUvnsXNlNtGrjHLEgxi75sZ32rU6LVEFj55o33E=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/plugins/plugin.title.d.ts"
+    },
+    {
+      "hash": "sha256-pJPNlC8pxFyb77HPLz6adXMA4fprWiDPk5v1Y8MfRqE=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/plugins/plugin.tooltip.d.ts"
+    },
+    {
+      "hash": "sha256-cPFSjdfSExOG/c9iI6wcVvLXcmx5d71e3c39Is0k9/Y=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/scales/index.d.ts"
+    },
+    {
+      "hash": "sha256-dHbbyBS0ZIn/92D9Hz1kJIrtvxfob9qIg8m9BILYv3M=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/scales/scale.category.d.ts"
+    },
+    {
+      "hash": "sha256-ivw9Ufis4La56JovfYpt/6ykHZFzPSNd6nwoNkowgaE=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/scales/scale.linear.d.ts"
+    },
+    {
+      "hash": "sha256-hSCz9MLGmLzvnHHUGKEcfL6Q17bX3q7SUal+5e9rIGg=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/scales/scale.linearbase.d.ts"
+    },
+    {
+      "hash": "sha256-Ac1Y8oQv/slKfNhogftVld9LCDmbmegX0sJcL7lz/gk=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/scales/scale.logarithmic.d.ts"
+    },
+    {
+      "hash": "sha256-1J9UWL5ZoQzGCtADvrr6Ius34VSSAgsr6coHBVtsixA=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/scales/scale.radialLinear.d.ts"
+    },
+    {
+      "hash": "sha256-CqSR1WqAEfz5Ukf4HMTgm0DP1alugCIQODR9o5Mei6Y=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/scales/scale.time.d.ts"
+    },
+    {
+      "hash": "sha256-gUlxlEwhsZEFlJxVKn3Vs1I1oXouuAkrgJ4vyqVOpOQ=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/scales/scale.timeseries.d.ts"
+    },
+    {
+      "hash": "sha256-0KizcB7a3bfbKTW7E0Q5JytGIBOEV56wtT1m5KyDu/w=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/types.d.ts"
+    },
+    {
+      "hash": "sha256-OSsXpro/aH8ZuiB/F4QcmTBnAcwogvNhWjtCZobYVOY=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/types/animation.d.ts"
+    },
+    {
+      "hash": "sha256-Xr9Edr6S8ADwDLn7edabq+b2rCo579sEqPNw4RAAPhk=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/types/basic.d.ts"
+    },
+    {
+      "hash": "sha256-nIjuu3W4K0zLlBLH4wNeQOGI6j19ywEP+HmGt/9ilVU=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/types/color.d.ts"
+    },
+    {
+      "hash": "sha256-Gkz7c3Ij1SM4f3r+5yGf0gFvHXPviF6ctCGDyRHQe00=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/types/geometric.d.ts"
+    },
+    {
+      "hash": "sha256-uvVX5lnO/ouc6UlzXoz4E/La7jBEMk7XQMq34UNVn3o=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/types/index.d.ts"
+    },
+    {
+      "hash": "sha256-FU+H7asQT/APNulbNtAeAUpNdKxPwhnhJOK/JicJkmc=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/types/layout.d.ts"
+    },
+    {
+      "hash": "sha256-dMOlfYdIieLwQriblohxavcEyyNm11fq1YaYj2zJpiU=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/Chart.js/types/utils.d.ts"
+    },
+    {
+      "hash": "sha256-iOhH+gPvrDv8Nl7b59mD4Bs8rrNiioUvHvd6DeZEAmg=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-adapter-moment/chartjs-adapter-moment.esm.js"
+    },
+    {
+      "hash": "sha256-m8t7o23oRnJRHXwZ4W3O0tBQLO2I/I8GZumSADFuu6w=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-adapter-moment/chartjs-adapter-moment.esm.min.js"
+    },
+    {
+      "hash": "sha256-p6tY88yPX1/I2nC4PfLYbXO21Y6CV+3eOsWtOdkHt3Y=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-adapter-moment/chartjs-adapter-moment.js"
+    },
+    {
+      "hash": "sha256-TKbdvBbEOMfezGDxb77pY503J3r2CTkPd5TrJymt21U=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-adapter-moment/chartjs-adapter-moment.min.js"
+    },
+    {
+      "hash": "sha256-ilHa/kcnTghl/9VNgn36qgBAHv2X9IiUBye8hV8ZCmY=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-plugin-autocolors/chartjs-plugin-autocolors.cjs"
+    },
+    {
+      "hash": "sha256-PEFw9K+D6q5SizYZ4F7jvG/7tzL+9YLwjUIhQOn89ww=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-plugin-autocolors/chartjs-plugin-autocolors.cjs.map"
+    },
+    {
+      "hash": "sha256-raT6uG+HO0fIjz89ip9I2HYwwUaJ/c/Zej00pE4mQZw=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-plugin-autocolors/chartjs-plugin-autocolors.esm.js"
+    },
+    {
+      "hash": "sha256-DklFhIzPc6X0HKIOon7i5NIGuwlZcVkP9WUx3xuIBVU=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-plugin-autocolors/chartjs-plugin-autocolors.esm.js.map"
+    },
+    {
+      "hash": "sha256-XCeFQHLnX5wNlRqrmCw2IE7rAtgtS4emI4SUu6Gscug=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-plugin-autocolors/chartjs-plugin-autocolors.min.js"
+    },
+    {
+      "hash": "sha256-ZEiU02U7rC7tUueJ34VcbJoEJog4ptJGmxTL2blPH3g=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-plugin-autocolors/chartjs-plugin-autocolors.min.js.map"
+    },
+    {
+      "hash": "sha256-Gj7ughrmc1hPmXSflBrCCEX/IXtDKCFrioPoJXvQmRk=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.esm.js"
+    },
+    {
+      "hash": "sha256-Kn5OBipP9L+7pqJ2B5w2tSjXm3j7OGZdMeldierPqiE=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.esm.min.js"
+    },
+    {
+      "hash": "sha256-XTWH6528DxqY/TBTXGqRrMi9gq19LLOkXXqaZsJYEHg=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.js"
+    },
+    {
+      "hash": "sha256-IMCPPZxtLvdt9tam8RJ8ABMzn+Mq3SQiInbDmMYwjDg=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.min.js"
+    },
+    {
+      "hash": "sha256-0ifiyc/Iwi3raYlYL6Oil8HxjUO3jDIgjiUcpu0MZgs=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.esm.js"
+    },
+    {
+      "hash": "sha256-Xkkuok6DeD8UxlpLGl6EdVKCgleFjQnhcbLI63cwDe8=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.esm.min.js"
+    },
+    {
+      "hash": "sha256-bAA8CjMgXur3IaL1LVh4vDintT4riJvN7JW3RmXDuso=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.js"
+    },
+    {
+      "hash": "sha256-cRtVj62HOT1M3EGc+4EBacU/38hYsYrNBB48zEVn8uU=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.min.js"
+    },
+    {
+      "hash": "sha256-GMd3rFxMDNnM5JQEpiKLLl8kSrDuG5egqchk758z59g=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/hammer.js/hammer.js"
+    },
+    {
+      "hash": "sha256-eVNjHw5UeU0jUqPPpZHAkU1z4U+QFBBY488WvueTm88=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/hammer.js/hammer.min.js"
+    },
+    {
+      "hash": "sha256-Od6l+nFGJD+X44uAwF1T/h1fno+7OrduyH6WX/sIBFw=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/hammer.js/hammer.min.js.map"
+    },
+    {
+      "hash": "sha256-nIBOLHBL8nVKkn4McX5t/lBaqTk2+95tZn3QOZUeT9E=",
+      "url": "_content/PSC.Blazor.Components.Chartjs/lib/hammer.js/hammer.min.map"
+    },
+    {
+      "hash": "sha256-4/kcpAh1HBGdafHcM79dEn5OHjqDUyklb9boY8Xo370=",
+      "url": "_framework/FinanzasMamaApp.hzisf2krbc.wasm"
     },
     {
       "hash": "sha256-HwE2HqtgGbU/jeFtiw246uBXxODzNBNhZJW1y/4MeAE=",
@@ -18,8 +554,8 @@ self.assetsManifest = {
       "url": "_framework/Microsoft.AspNetCore.Components.WebAssembly.6up78yjh1n.wasm"
     },
     {
-      "hash": "sha256-HbZ5v+L4DQXgw3GPh6CkiAuh/x8Z1wU9oqclFMQQYGc=",
-      "url": "_framework/Microsoft.AspNetCore.Components.v5lfhw0gnu.wasm"
+      "hash": "sha256-KBLlbMxjDF/pFvf3kH0ONyvp/SVA5CO2rNoC2wkxhGM=",
+      "url": "_framework/Microsoft.AspNetCore.Components.sjlbodwd2p.wasm"
     },
     {
       "hash": "sha256-mg70eP+qkGbpeDrXxYEl9Y1edBaHEHxjgff58xis9/A=",
@@ -96,6 +632,10 @@ self.assetsManifest = {
     {
       "hash": "sha256-GlXMWKvDs45M2pACoR3Y4Qh8mcrOZGljqmvJY+6JZ5s=",
       "url": "_framework/Newtonsoft.Json.qkbufwhni2.wasm"
+    },
+    {
+      "hash": "sha256-MW5tpr3/7NNNQ2Y5HI5VIhGW7+sfezJSkGPTKvCH6SU=",
+      "url": "_framework/PSC.Blazor.Components.Chartjs.pm0gzhex7r.wasm"
     },
     {
       "hash": "sha256-jUEh1mM6mkGdyQrEwowAbpQ8R148PZIAUIOXn0mrgIA=",
@@ -206,8 +746,8 @@ self.assetsManifest = {
       "url": "_framework/System.Linq.Expressions.6a8aiasiwe.wasm"
     },
     {
-      "hash": "sha256-kW/CLvSbpw0g2s+tvqR6BiF5RJZSQAYDJfYoWAaF9BQ=",
-      "url": "_framework/System.Linq.x81d457s1l.wasm"
+      "hash": "sha256-F9ot8dcW6L8WwJY1ZBopbBlsHbI9Ny/TFjlgRIk24v0=",
+      "url": "_framework/System.Linq.fmfod6fqvr.wasm"
     },
     {
       "hash": "sha256-BRU9hQ5yn+8XalZEseaFmTagJDNGMApQfGhCYlcdyLU=",
@@ -294,8 +834,8 @@ self.assetsManifest = {
       "url": "_framework/System.Runtime.Serialization.Primitives.lqowotcine.wasm"
     },
     {
-      "hash": "sha256-Tk44eC4HX3RklmW4VQtBvPtu9bc/57Fmt8d/2mwNhzk=",
-      "url": "_framework/System.Runtime.irrnqu1f5h.wasm"
+      "hash": "sha256-Ie32Cg+/8KBjd8huc2oxHhUNnVO7ZN0f5Ro/1SpGu7I=",
+      "url": "_framework/System.Runtime.dxzhhrywbh.wasm"
     },
     {
       "hash": "sha256-hAueTImo6zEa1FyfzJ0D8P45QoZPxze/9uxbYdw/BLk=",
@@ -314,8 +854,8 @@ self.assetsManifest = {
       "url": "_framework/System.Text.Encodings.Web.o9icumg7r0.wasm"
     },
     {
-      "hash": "sha256-2DIKZdklT+iXmrumIa8Vc9ex+Tvyav7c7S/stxyKmfo=",
-      "url": "_framework/System.Text.Json.crhte4vysf.wasm"
+      "hash": "sha256-tZQUR05JbEdvwVURaMXAcXA39I5tT8BTfjn3/9pFFhc=",
+      "url": "_framework/System.Text.Json.x1z5cauqcw.wasm"
     },
     {
       "hash": "sha256-NRJKmodyF4CfqHkQThRccs8rQqLTY7JE6h7wFv1k1HA=",
@@ -358,7 +898,7 @@ self.assetsManifest = {
       "url": "_framework/Websocket.Client.sntjl98ana.wasm"
     },
     {
-      "hash": "sha256-TO1g2tGC66t6gG75gnCigkf1JoR4g7GSp9EXdFhcv04=",
+      "hash": "sha256-whhpWGukhlCG/HL4BCAzJB134QZWb4/tKb7kyDGHNbw=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -398,7 +938,7 @@ self.assetsManifest = {
       "url": "_framework/netstandard.r4qhdad01r.wasm"
     },
     {
-      "hash": "sha256-SUVcjsO3cl6jKWAkLuUjb+BEsJUP8+NNTQOIVp9POXI=",
+      "hash": "sha256-aNMULw+df9RAuRQNQAU1wLLS6aRwYVKQYgm5My+iuUQ=",
       "url": "css/app.css"
     },
     {
@@ -414,7 +954,7 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-nZXfQ/TngIVsGLcFi7/xQgi61w5I1ER5iEsEu2AhqdY=",
+      "hash": "sha256-84OEYcvFxezRY/9DnFLyOPNsFPn2nXGh1WJ/T0DwpnQ=",
       "url": "index.html"
     },
     {

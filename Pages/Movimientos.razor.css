@@ -73,3 +73,78 @@
         white-space: nowrap;
     }
 }
+
+.history-card {
+    background: white;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .history-header h3 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 700;
+        color: #1e293b;
+    }
+
+    .history-header span {
+        background: #eef2ff;
+        color: #4338ca;
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #f8fafc;
+}
+
+th {
+    padding: 16px;
+    text-align: left;
+    color: #64748b;
+    font-size: 14px;
+}
+
+td {
+    padding: 18px 16px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 15px;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+.income {
+    color: #16a34a;
+    font-weight: 700;
+}
+
+.expense {
+    color: #dc2626;
+    font-weight: 700;
+}
+.balance-column {
+    font-weight: 700;
+    color: #1e40af;
+}

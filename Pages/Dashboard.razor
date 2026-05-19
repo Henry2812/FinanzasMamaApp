@@ -1,33 +1,99 @@
 @page "/dashboard"
+@using FinanzasMamaApp.Models
+@inject Supabase.Client SupabaseClient
+@inject NavigationManager Nav
 
 <div class="page-container">
 
-    <div class="filters-card">
+    <div class="filters-card dashboard-filters">
         <div class="filter-group">
-            <label>Fecha Inicio</label>
-            <input type="date" />
+            <label>Mes de Trabajo</label>
+            <input type="month"
+                   @bind-value="mesTrabajo"
+                   @bind-value:format="yyyy-MM" />
         </div>
 
         <div class="filter-group">
-            <label>Fecha Fin</label>
-            <input type="date" />
+            <label>Saldo Anterior</label>
+            <input type="number" value="@saldoAnterior" disabled />
         </div>
+
+        <button class="dashboard-btn" @onclick="CargarDatos">
+            Consultar
+        </button>
     </div>
 
     <div class="cards-grid">
         <div class="summary-card green">
             <span>Ingresos del Mes</span>
-            <h2>$0,00</h2>
+            <h2>$@totalIngresosConSaldo.ToString("0.00")</h2>
         </div>
 
         <div class="summary-card red">
             <span>Egresos del Mes</span>
-            <h2>$0,00</h2>
+            <h2>$@totalEgresos.ToString("0.00")</h2>
         </div>
 
         <div class="summary-card blue">
-            <span>Saldo Final Actual</span>
-            <h2>$0,00</h2>
+            <span>Saldo Final</span>
+            <h2>$@saldoFinal.ToString("0.00")</h2>
         </div>
     </div>
 </div>
+
+@code {
+
+    DateTime mesTrabajo = DateTime.Now;
+
+    decimal saldoAnterior;
+    decimal totalIngresos;
+    decimal totalIngresosConSaldo;
+    decimal totalEgresos;
+    decimal saldoFinal;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (SupabaseClient.Auth.CurrentUser == null)
+        {
+            Nav.NavigateTo("/login", true);
+            return;
+        }
+
+        await CargarDatos();
+    }
+
+    async Task CargarDatos()
+    {
+        var user = SupabaseClient.Auth.CurrentUser;
+
+        // SALDO DEL MES
+        var saldoResponse = await SupabaseClient
+            .From<SaldoMensualModel>()
+            .Filter("user_id", Supabase.Postgrest.Constants.Operator.Equals, user!.Id)
+            .Filter("mes", Supabase.Postgrest.Constants.Operator.Equals, mesTrabajo.ToString("yyyy-MM"))
+            .Get();
+
+        saldoAnterior = saldoResponse.Models.FirstOrDefault()?.saldo_anterior ?? 0;
+
+        // MOVIMIENTOS
+        var movResponse = await SupabaseClient
+            .From<MovimientoModel>()
+            .Filter("user_id", Supabase.Postgrest.Constants.Operator.Equals, user.Id)
+            .Get();
+
+        var movimientos = movResponse.Models
+            .Where(x => x.fecha.StartsWith(mesTrabajo.ToString("yyyy-MM")))
+            .ToList();
+
+        totalIngresos = movimientos
+            .Where(x => x.tipo == "Ingreso")
+            .Sum(x => x.monto);
+
+        totalEgresos = movimientos
+            .Where(x => x.tipo == "Egreso")
+            .Sum(x => x.monto);
+
+        totalIngresosConSaldo = saldoAnterior + totalIngresos;
+        saldoFinal = saldoAnterior + totalIngresos - totalEgresos;
+    }
+}

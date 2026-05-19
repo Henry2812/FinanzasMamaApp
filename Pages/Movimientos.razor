@@ -1,55 +1,242 @@
 ﻿@page "/movimientos"
+@inject IJSRuntime JS
+@using FinanzasMamaApp.Models
+@inject Supabase.Client SupabaseClient
 
 <div class="page-container">
 
     <div class="filters-card">
         <div class="filter-group">
             <label>Mes de Trabajo</label>
-            <input type="month" />
+            <input type="month"
+                   value="@mesTrabajo.ToString("yyyy-MM")"
+                   @onchange="OnMesChanged" />
         </div>
 
         <div class="filter-group">
             <label>Saldo Anterior</label>
-            <input type="number" placeholder="0" />
+            <input type="number" @bind="saldoAnterior" />
         </div>
+
+        <button class="main-btn" @onclick="GuardarSaldo">
+            @(saldoExiste ? "Modificar Saldo" : "Guardar Saldo")
+        </button>
     </div>
 
     <div class="form-card">
         <h3>➕ Nuevo Movimiento</h3>
 
         <div class="form-grid">
-            <input type="date" />
-            <select>
-                <option>Ingreso (+)</option>
-                <option>Egreso (-)</option>
+            <input type="date" @bind-value="fecha" @bind-value:format="yyyy-MM-dd" />
+
+            <select @bind="tipo">
+                <option value="Ingreso">Ingreso (+)</option>
+                <option value="Egreso">Egreso (-)</option>
             </select>
-            <input type="number" placeholder="0.00" />
-            <input type="text" placeholder="Detalle / Concepto" />
-            <input type="text" placeholder="Comentario" />
+
+            <input type="number" @bind="monto" placeholder="0.00" />
+            <input type="text" @bind="detalle" placeholder="Detalle" />
+            <input type="text" @bind="comentario" placeholder="Comentario" />
         </div>
 
-        <button class="main-btn">Registrar Movimiento</button>
+        <button class="main-btn" @onclick="GuardarMovimiento">
+            Registrar Movimiento
+        </button>
     </div>
 
-    <div class="history-card">
-        <div class="history-top">
-            <h3>Historial</h3>
+<div class="history-card">
+    <div class="history-header">
+        <h3>📋 Historial</h3>
+        <span>@movimientos.Count movimientos</span>
+    </div>
 
-            <div class="history-filters">
-                <input type="month" />
-                <input type="date" />
-                <input type="date" />
-            </div>
-        </div>
-
+    <div class="table-container">
         <table>
             <thead>
                 <tr>
                     <th>Fecha</th>
                     <th>Concepto</th>
+                    <th>Comentario</th>
                     <th>Monto</th>
+                    <th>Saldo Actual</th>
                 </tr>
             </thead>
+            <tbody>
+                @{
+                    decimal saldoActual = saldoAnterior;
+                }
+
+                @foreach (var item in movimientos.OrderBy(x => x.fecha))
+                {
+                    if (item.tipo == "Ingreso")
+                        saldoActual += item.monto;
+                    else
+                        saldoActual -= item.monto;
+
+                    <tr>
+                        <td>@item.fecha</td>
+                        <td>@item.detalle</td>
+                        <td>@item.comentario</td>
+
+                        <td class="@(item.tipo == "Ingreso" ? "income" : "expense")">
+                            @(item.tipo == "Ingreso" ? "+" : "-") $@item.monto
+                        </td>
+
+                        <td class="balance-column">
+                            $@saldoActual
+                        </td>
+                    </tr>
+                }
+            </tbody>
         </table>
     </div>
 </div>
+</div>
+
+@code {
+    bool saldoExiste = false;
+
+    DateTime mesTrabajo = DateTime.Now;
+    DateTime fecha = DateTime.Now;
+    decimal saldoAnterior;
+    string tipo = "Ingreso";
+    decimal monto;
+    string detalle = "";
+    string comentario = "";
+
+    List<MovimientoModel> movimientos = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CargarSaldoMes();
+        await CargarMovimientos();
+    }
+
+    async Task OnMesChanged(ChangeEventArgs e)
+    {
+        var valor = e.Value?.ToString();
+
+        if (!string.IsNullOrWhiteSpace(valor))
+        {
+            var partes = valor.Split('-');
+
+            mesTrabajo = new DateTime(
+                int.Parse(partes[0]),
+                int.Parse(partes[1]),
+                1
+            );
+
+            await CambiarMes();
+        }
+    }
+
+    async Task CambiarMes()
+    {
+        await CargarSaldoMes();
+        await CargarMovimientos();
+    }
+
+    async Task CargarSaldoMes()
+    {
+        var user = SupabaseClient.Auth.CurrentUser;
+
+        var response = await SupabaseClient
+            .From<SaldoMensualModel>()
+            .Filter("user_id", Supabase.Postgrest.Constants.Operator.Equals, user!.Id)
+            .Filter("mes", Supabase.Postgrest.Constants.Operator.Equals, mesTrabajo.ToString("yyyy-MM"))
+            .Get();
+
+        var saldo = response.Models.FirstOrDefault();
+
+        if (saldo != null)
+        {
+            saldoAnterior = saldo.saldo_anterior;
+            saldoExiste = true;
+        }
+        else
+        {
+            saldoAnterior = 0;
+            saldoExiste = false;
+        }
+    }
+
+    async Task GuardarSaldo()
+    {
+        var user = SupabaseClient.Auth.CurrentUser;
+
+        var response = await SupabaseClient
+            .From<SaldoMensualModel>()
+            .Filter("user_id", Supabase.Postgrest.Constants.Operator.Equals, user!.Id)
+            .Filter("mes", Supabase.Postgrest.Constants.Operator.Equals, mesTrabajo.ToString("yyyy-MM"))
+            .Get();
+
+        var existente = response.Models.FirstOrDefault();
+
+        if (existente == null)
+        {
+            await SupabaseClient.From<SaldoMensualModel>().Insert(
+                new SaldoMensualModel
+                {
+                    user_id = user.Id,
+                    mes = mesTrabajo.ToString("yyyy-MM"),
+                    saldo_anterior = saldoAnterior
+                });
+        }
+        else
+        {
+            existente.saldo_anterior = saldoAnterior;
+
+            await SupabaseClient
+                .From<SaldoMensualModel>()
+                .Update(existente);
+        }
+
+        saldoExiste = true;
+    }
+
+    async Task GuardarMovimiento()
+    {
+
+        if (!saldoExiste)
+        {
+            await JS.InvokeVoidAsync("alert",
+                "Debes registrar primero un saldo anterior para este mes.");
+            return;
+        }
+
+        var user = SupabaseClient.Auth.CurrentUser;
+
+        await SupabaseClient.From<MovimientoModel>().Insert(new MovimientoModel
+        {
+            user_id = user!.Id,
+            fecha = fecha.ToString("yyyy-MM-dd"),
+            tipo = tipo,
+            monto = monto,
+            detalle = detalle,
+            comentario = comentario
+        });
+
+        await CargarMovimientos();
+
+        monto = 0;
+        tipo = "Ingreso";
+        detalle = "";
+        comentario = "";
+        fecha = DateTime.Now;
+    }
+
+    async Task CargarMovimientos()
+    {
+        var user = SupabaseClient.Auth.CurrentUser;
+
+        var response = await SupabaseClient
+            .From<MovimientoModel>()
+            .Filter("user_id", Supabase.Postgrest.Constants.Operator.Equals, user!.Id)
+            .Get();
+
+        movimientos = response.Models
+            .Where(x => x.fecha.StartsWith(mesTrabajo.ToString("yyyy-MM")))
+            .OrderBy(x => DateTime.Parse(x.fecha))
+            .ToList();
+    }
+}

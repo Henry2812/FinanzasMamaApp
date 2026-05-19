@@ -1,18 +1,52 @@
 @page "/reportes"
+@inject IJSRuntime JS
+@using FinanzasMamaApp.Models
+@inject Supabase.Client SupabaseClient
+@inject NavigationManager Nav
 
 <div class="page-container">
+
+    <div class="filters-card dashboard-filters">
+        <div class="filter-group">
+            <label>Mes de Trabajo</label>
+            <input type="month"
+                   @bind-value="mesTrabajo"
+                   @bind-value:format="yyyy-MM" />
+        </div>
+
+        <div class="filter-group">
+            <label>Saldo Anterior</label>
+            <input type="number" value="@saldoAnterior" disabled />
+        </div>
+
+        <button class="dashboard-btn" @onclick="CargarReporte">
+            Consultar
+        </button>
+    </div>
 
     <div class="reports-grid">
         <div class="report-card big-card">
             <h3>Balance Mensual</h3>
+
+            <div class="chart-wrapper">
+                <canvas id="pieChart"></canvas>
+            </div>
         </div>
 
         <div class="report-card">
-            <h3>Resumen Anual (2026)</h3>
+            <h3>Resumen Anual (@DateTime.Now.Year)</h3>
 
-            <div class="resume green-box">Total Ingresos Anuales $0</div>
-            <div class="resume red-box">Total Gastos Anuales $0</div>
-            <div class="resume gray-box">Diferencia Operativa $0</div>
+        <div class="resume green-box">
+            Total Ingresos $@ingresosMesMostrado
+        </div>
+
+        <div class="resume red-box">
+            Total Gastos $@egresosMes
+        </div>
+
+        <div class="resume gray-box">
+            Diferencia Operativa $@diferenciaOperativa
+        </div>
         </div>
     </div>
 
@@ -24,7 +58,91 @@
 
         <div>
             <small>AHORRO NETO ANUAL</small>
-            <h2>$0,00</h2>
+            <h2>$@diferenciaOperativa</h2>
         </div>
     </div>
 </div>
+
+@code {
+
+    decimal egresosMes;
+ 
+    DateTime mesTrabajo = DateTime.Now;
+
+    decimal saldoAnterior;
+    decimal ingresosAnuales;
+    decimal egresosAnuales;
+    decimal ingresosMesMostrado;
+    decimal diferenciaOperativa;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var user = SupabaseClient.Auth.CurrentUser;
+
+        if (user == null)
+        {
+            Nav.NavigateTo("/login", true);
+            return;
+        }
+
+        await CargarReporte();
+    }
+
+    async Task CargarReporte()
+    {
+        var user = SupabaseClient.Auth.CurrentUser;
+
+        // SALDO ANTERIOR
+        var saldoResponse = await SupabaseClient
+            .From<SaldoMensualModel>()
+            .Filter("user_id", Supabase.Postgrest.Constants.Operator.Equals, user!.Id)
+            .Filter("mes", Supabase.Postgrest.Constants.Operator.Equals, mesTrabajo.ToString("yyyy-MM"))
+            .Get();
+
+        saldoAnterior = saldoResponse.Models.FirstOrDefault()?.saldo_anterior ?? 0;
+
+        // MOVIMIENTOS
+        var response = await SupabaseClient
+            .From<MovimientoModel>()
+            .Filter("user_id", Supabase.Postgrest.Constants.Operator.Equals, user.Id)
+            .Get();
+
+        var movimientos = response.Models;
+
+        ingresosAnuales = movimientos
+            .Where(x =>
+                x.tipo == "Ingreso" &&
+                DateTime.Parse(x.fecha).Year == DateTime.Now.Year)
+            .Sum(x => x.monto);
+
+        egresosAnuales = movimientos
+            .Where(x =>
+                x.tipo == "Egreso" &&
+                DateTime.Parse(x.fecha).Year == DateTime.Now.Year)
+            .Sum(x => x.monto);
+
+        var movimientosMes = movimientos
+            .Where(x =>
+                DateTime.Parse(x.fecha).Month == mesTrabajo.Month &&
+                DateTime.Parse(x.fecha).Year == mesTrabajo.Year)
+            .ToList();
+
+        var ingresosMes = movimientosMes
+            .Where(x => x.tipo == "Ingreso")
+            .Sum(x => x.monto);
+
+        egresosMes = movimientosMes
+            .Where(x => x.tipo == "Egreso")
+            .Sum(x => x.monto);
+
+        // aquí sí toma saldo anterior
+        ingresosMesMostrado = saldoAnterior + ingresosMes;
+        diferenciaOperativa = saldoAnterior + ingresosMes - egresosMes;
+
+        await JS.InvokeVoidAsync(
+            "renderPieChart",
+            (double)ingresosMes,
+            (double)egresosMes
+        );
+    }
+}
