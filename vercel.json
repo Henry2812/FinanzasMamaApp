@@ -1,5 +1,5 @@
 {
-  "outputDirectory": "deploy",
+  "outputDirectory": "bin/Release/net9.0/publish/wwwroot",
   "cleanUrls": true,
   "rewrites": [
     {

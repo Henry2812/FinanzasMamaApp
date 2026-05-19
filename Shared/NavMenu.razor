@@ -1,6 +1,6 @@
 ﻿@inject NavigationManager Nav
 @inject Supabase.Client SupabaseClient
-
+@inject NavigationManager Nav
 <nav class="top-nav">
     <div class="nav-container">
         <div class="logo">💳 FinanzasPro</div>
@@ -21,6 +21,6 @@
     async Task CerrarSesion()
     {
         await SupabaseClient.Auth.SignOut();
-        Nav.NavigateTo("/login", true);
+        Nav.NavigateTo("/login");
     }
 }
