@@ -1,10 +1,10 @@
 {
   "mainAssemblyName": "FinanzasMamaApp",
   "resources": {
-    "hash": "sha256-GfdsQ3b7Q18z8f3n8MpfqcbqBNR5Dqjc9vvQ1j6iTOU=",
+    "hash": "sha256-aRhw1K/Mw0wWy/jw+nhOGgFyxz+dbdd9eVxum1Wqa3c=",
     "fingerprinting": {
-      "Microsoft.AspNetCore.Components.xc85pgo4s7.wasm": "Microsoft.AspNetCore.Components.wasm",
-      "Microsoft.AspNetCore.Components.Web.j3qko22j2r.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
+      "Microsoft.AspNetCore.Components.wbvun4nqk0.wasm": "Microsoft.AspNetCore.Components.wasm",
+      "Microsoft.AspNetCore.Components.Web.tj799dhpve.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.y498n490nz.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
       "Microsoft.Extensions.Configuration.oovwwqf5qf.wasm": "Microsoft.Extensions.Configuration.wasm",
       "Microsoft.Extensions.Configuration.Abstractions.opwbk83jqu.wasm": "Microsoft.Extensions.Configuration.Abstractions.wasm",
@@ -27,14 +27,14 @@
       "System.Memory.0or0eqaudk.wasm": "System.Memory.wasm",
       "System.Net.Http.wpsxy4knhi.wasm": "System.Net.Http.wasm",
       "System.Net.Primitives.d7pahnbjlt.wasm": "System.Net.Primitives.wasm",
-      "System.Private.Uri.6ns6vxpau5.wasm": "System.Private.Uri.wasm",
+      "System.Private.Uri.39ahdu1j3q.wasm": "System.Private.Uri.wasm",
       "System.Runtime.InteropServices.JavaScript.8z290vppku.wasm": "System.Runtime.InteropServices.JavaScript.wasm",
       "System.Runtime.zjtwb6s0rf.wasm": "System.Runtime.wasm",
       "System.Text.Encodings.Web.dvi1t3okep.wasm": "System.Text.Encodings.Web.wasm",
       "System.Text.Json.0jtr0sfoda.wasm": "System.Text.Json.wasm",
       "System.Text.RegularExpressions.k8ibga7wut.wasm": "System.Text.RegularExpressions.wasm",
-      "System.Private.CoreLib.nuow4nofg4.wasm": "System.Private.CoreLib.wasm",
-      "FinanzasMamaApp.t3gnntsv4m.wasm": "FinanzasMamaApp.wasm",
+      "System.Private.CoreLib.j5te5ogn4r.wasm": "System.Private.CoreLib.wasm",
+      "FinanzasMamaApp.3sgy7virnb.wasm": "FinanzasMamaApp.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.noby4tlk4d.js": "dotnet.native.js",
       "dotnet.native.qe75a9vfqn.wasm": "dotnet.native.wasm",
@@ -59,11 +59,11 @@
     },
     "coreAssembly": {
       "System.Runtime.InteropServices.JavaScript.8z290vppku.wasm": "sha256-rNzWhBOFDey9RsCv9RYwXjilGSxT7OPih9Pom7VnobY=",
-      "System.Private.CoreLib.nuow4nofg4.wasm": "sha256-z8UhuCGce5dM0v1Wu656Df/bA33+Y603HE+SPEoi8ZQ="
+      "System.Private.CoreLib.j5te5ogn4r.wasm": "sha256-6S+tP+nn+hfW9At+59QfmQF8tojtpR0tJnmsiYApNMY="
     },
     "assembly": {
-      "Microsoft.AspNetCore.Components.xc85pgo4s7.wasm": "sha256-kTL5IoZtzOB4uxtZcSvgMpzeHnAJWb6WxotnSG67yfk=",
-      "Microsoft.AspNetCore.Components.Web.j3qko22j2r.wasm": "sha256-HwE2HqtgGbU/jeFtiw246uBXxODzNBNhZJW1y/4MeAE=",
+      "Microsoft.AspNetCore.Components.wbvun4nqk0.wasm": "sha256-HPEO/Re6Z2880r3VV/iYRK6f6f9/qHmoZDIwgv7eEGM=",
+      "Microsoft.AspNetCore.Components.Web.tj799dhpve.wasm": "sha256-edvymETuCK0skZaEc2Xq33FPuaTGcbT3B3Q1TMX75uw=",
       "Microsoft.AspNetCore.Components.WebAssembly.y498n490nz.wasm": "sha256-Qne4o8cT1n1AJTVSNS/3MgYoio1JuEDW8T93PzzVBKY=",
       "Microsoft.Extensions.Configuration.oovwwqf5qf.wasm": "sha256-aGCPTRRX+LpoEC0kHuWtr4WOAl74G2p0HGSMadHDYYo=",
       "Microsoft.Extensions.Configuration.Abstractions.opwbk83jqu.wasm": "sha256-pOED2iNDgbaIZdNUqih81BZOhvMp17gA7UYEE6dbly8=",
@@ -86,12 +86,12 @@
       "System.Memory.0or0eqaudk.wasm": "sha256-ECLbc1+da5sOnq5gxaEbwUJwxnx1De5iRFuO+fPJUJ0=",
       "System.Net.Http.wpsxy4knhi.wasm": "sha256-XP63du6nwaOXst/7QNT0RJhOpRGDUdETMwrDv2bjD2w=",
       "System.Net.Primitives.d7pahnbjlt.wasm": "sha256-54Sidp4aqYDTQI7b6YP4U9grUXaiD22W/I5OwHoJgqU=",
-      "System.Private.Uri.6ns6vxpau5.wasm": "sha256-fnaopbtzzcWvG0i6BlsjEYlE6tYcG0QmLIIShcxWums=",
+      "System.Private.Uri.39ahdu1j3q.wasm": "sha256-2Xwuoig9n4fdftluANIEUCPWivfD00nkT71wE/j/P40=",
       "System.Runtime.zjtwb6s0rf.wasm": "sha256-YR+ixt1kyiSY8D9SPAdoiSp2kmQ6Ym6QXSjmSp+IMnI=",
       "System.Text.Encodings.Web.dvi1t3okep.wasm": "sha256-N0H/XiI7CqSVWRBwOAksJI9mQ1UaYSw6kuREMzV/aw8=",
       "System.Text.Json.0jtr0sfoda.wasm": "sha256-xFFFrcKvgZr/OD8aiMiD25hF5Oi+PyNR0+WyUDaBQhk=",
       "System.Text.RegularExpressions.k8ibga7wut.wasm": "sha256-7OYvLuFLvwbax++2u+uoDmoaX8o/Q8wcYJC92eP1YjA=",
-      "FinanzasMamaApp.t3gnntsv4m.wasm": "sha256-STz+NXFTya0to2Wp1Z1xu/suKz9t8gsMoLYQ8j82N1s="
+      "FinanzasMamaApp.3sgy7virnb.wasm": "sha256-jVPX3EG58IKcVj/U5k0+5whA3OsFmovProVDqRVAIxw="
     }
   },
   "cacheBootResources": true,
